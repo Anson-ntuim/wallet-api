@@ -20,7 +20,7 @@ app.use(express.json());
 
 app.use("/api/transactions", transactionsRoute);
 
-app.get("/health", (req, res) => {
+app.get("/api/health", (req, res) => {
   res.status(200).json({ message: "Server is running" });
 });
 
